@@ -10,6 +10,9 @@
 
         <!--GOOGLE FONTS-->
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
         <!--FONT AWSOME-->
 
@@ -35,19 +38,26 @@
         
         <div class="my-container h-100 text-center">
 
-            <h1 class="text-center">Simon Says...</h1>
+            <button id="play-button" class="btn-info mt-3 pt-2 pe-4 pb-2 ps-4">Play</button>
 
-            <button id="play-button" class="btn-info pt-2 pe-4 pb-2 ps-4">Play</button>
+            <h1 class="text-center mt-3 mb-4">Simon Says...</h1>
+
+            <div id="timer" style="height: 40px"></div>
            
-            <div class="numbers h-50 d-flex justify-content-center align-items-center">
+            <div class="mt-4 mb-3 numbers d-flex justify-content-center align-items-center">
                 
-                
-           
+    
             </div>
 
-            <div class="user-numbers">
+            <h2 id="your-numbers" class=" m-3 d-none">I TUOI NUMERI</h2>
+
+            <div class="user-numbers d-flex justify-content-center align-items-center m-3">
 
             </div>
+
+            <h2 id="end-game-msg" class="d-none"></h2>
+
+            <button id="restart-button" class="btn-info mt-3 pt-2 pe-4 pb-2 ps-4 d-none">Riprova</button>
         
         </div>
 
